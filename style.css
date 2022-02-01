@@ -6,24 +6,51 @@
 
 #header {
   background-color: red;
+  grid-area: header;
+  text-align: center;
 }
 
 #footer {
   background-color: indigo;
+  grid-area: footer;
+  text-align: center;
 }
 
 #article-1 {
   background-color: yellow;
+  grid-area: article-1;
+  text-align: center;
 }
 
 #article-2 {
   background-color: green;
+  grid-area: article-2;
+  text-align: center;
 }
 
 #nav {
   background-color: orange;
+  grid-area: nav;
+  text-align: center;
 }
 
 #ad-area {
   background-color: blue;
+  grid-area: ad-area;
+  text-align: center;
+}
+
+#app {
+  display: grid;
+  grid-template-columns: (8,1fr);
+  grid-template-rows: (8,1fr);
+  grid-template-areas: 
+  "header header header header header header header header"
+  "nav article-1 article-1 article-1 article-1 article-1 article-1 ad-area"
+  "nav article-1 article-1 article-1 article-1 article-1 article-1 ad-area"
+  "nav article-1 article-1 article-1 article-1 article-1 article-1 ad-area"
+  "nav article-2 article-2 article-2 article-2 article-2 article-2 ad-area"
+  "nav article-2 article-2 article-2 article-2 article-2 article-2 ad-area"
+  "nav article-2 article-2 article-2 article-2 article-2 article-2 ad-area"
+  "footer footer footer footer footer footer footer footer";
 }
